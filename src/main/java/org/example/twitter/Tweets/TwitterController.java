@@ -3,6 +3,7 @@ package org.example.twitter.Tweets;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.commons.io.FileUtils;
+import org.apache.coyote.RequestInfo;
 import org.springframework.boot.system.ApplicationHome;
 import org.springframework.http.converter.json.GsonBuilderUtils;
 import org.springframework.scheduling.annotation.Scheduled;
@@ -26,6 +27,11 @@ public class TwitterController {
     RestTemplate restTemplate = new RestTemplate();
 
 
+    @RequestMapping(value = "/helloWorld", method = RequestMethod.GET)
+
+    public String hello(){
+        return "Hello World";
+    }
     @RequestMapping(value = "/getSorcerer/{id}", method = RequestMethod.GET)
     public Twitter getSorcerer(@PathVariable int id) throws IOException {
         ObjectMapper mapper = new ObjectMapper();
