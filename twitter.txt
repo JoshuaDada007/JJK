@@ -1,0 +1,6 @@
+{"id":0,"userName":"Ryomen Sukuna","tweet":"Empty","loggedIn":false}
+{"id":1,"userName":"Yuta Okkotsu","tweet":"Empty","loggedIn":false}
+{"id":2,"userName":"Maki Zenin","tweet":"Yooooo","loggedIn":true}
+{"id":3,"userName":"Toji Fushiguro","tweet":"Yooooo","loggedIn":true}
+{"id":4,"userName":"Yuki Itadori","tweet":"Yooooo","loggedIn":true}
+{"id":5,"userName":"Gojo Satoru","tweet":"Yooooo","loggedIn":true}
