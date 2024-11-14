@@ -2,13 +2,42 @@ This is my notes from the class
 
 Go to no-ip.com and see what it is used for
 
+
+
+SETTING UP YOUR DIGITAL OCEAN DATABASE
+
 In order to setup your database, you have to go to digitalocean.com, create droplets
 which means creating a cloud server. Choose the plan and create your root password
 Root password is 01_Oluwatoni
 
+Go to the database server you just created and go to the console in order to install jdk 17.
+apt openjdk-17-jdk
+
+Inorder to adduser in linux for your db, you do
+adduser name
+once you add the name you can clone your repo in order to merge with the db by doing
+you have to cd into it which will give you a path like /home/name
+git clone url
+Once you clone it you have to cd into the project, then run this command to generate your build
+./gradlew build -x test
+Once the build is generated you can finally get the JAR file which is like a zip file for all your Java code in this path
+ build/libs. You will get a red JAR name that you can use to run the whole build which is
+ java -jar JAR_NAME
+
+
+
+
+
+
+
+
+
+
+--------------------------------------------------------------------
 My github accounts are:
 jdada@primerevenue.com
 joshuadada007
 joshywashy
 
 Please fix JAVA_HOME environment variable.
+
